@@ -1,28 +1,32 @@
-
 # Teen Mental Health Data Analysis
 
 ## Overview
 
-This project explores patterns in teen mental health using a dataset that includes demographic information, social media usage, and psychological indicators such as stress, anxiety, and depression.
+This project performs an exploratory data analysis on a dataset related to teen mental health. The dataset includes demographic information, social media usage patterns, and mental health indicators such as stress, anxiety, addiction, sleep, and depression.
 
-The analysis focuses on understanding how different factors, particularly social media behavior, relate to mental well-being.
+The goal of this analysis is to understand patterns and relationships between social media usage and mental health among teenagers.
 
 ## Objectives
 
-* Examine the distribution of age and gender
-* Analyze platform usage among teenagers
-* Study the relationship between social media usage and stress levels
-* Explore indicators such as anxiety, addiction, and sleep patterns
-* Identify correlations between key variables
+* Understand the structure and summary of the dataset
+* Analyze age and gender distribution
+* Examine platform usage patterns
+* Explore relationships between social media usage and stress levels
+* Study mental health indicators such as anxiety, addiction, and sleep
+* Perform correlation analysis among numeric variables
 
 ## Dataset
 
-The dataset includes the following key variables:
+The dataset contains the following variables:
 
 * Age
 * Gender
 * Platform Usage
 * Daily Social Media Hours
+* Screen Time
+* Academic Performance
+* Physical Activity
+* Social Interaction Level
 * Stress Level
 * Anxiety Level
 * Addiction Level
@@ -31,23 +35,28 @@ The dataset includes the following key variables:
 
 ## Analysis Performed
 
-The notebook includes:
+The following steps were carried out:
 
-* Data inspection and summary statistics
-* Checking and reporting missing values
+* Data loading and preview of first few rows
+* Dataset information and summary statistics
+* Checking for missing values
 * Removal of duplicate records
-* Distribution analysis (age, gender, platform usage)
+* Age distribution using histogram
+* Gender distribution using bar chart
+* Platform usage analysis
 * Platform-wise gender comparison
+* Summary statistics of mental health variables
 * Stress level distribution
-* Relationship between social media usage and stress
-* Depression distribution
-* Correlation analysis among numeric variables
+* Scatter plot of social media usage vs stress level
+* Depression distribution analysis
+* Correlation analysis of numeric variables
+
 
 ## Key Insights
 
 * Higher social media usage shows a relationship with increased stress levels
 * Platform usage varies across gender groups
-* Sleep patterns and addiction levels appear related to mental health indicators
+* Mental health indicators such as anxiety, addiction, and sleep are interconnected
 * Correlation analysis highlights relationships between usage, stress, and anxiety
 
 ## How to Run
@@ -58,17 +67,23 @@ The notebook includes:
    pip install pandas numpy matplotlib
    ```
 
-2. Run the notebook:
+2. Run the notebook or script:
+
+   ```
+   python teen.py
+   ```
+
+   or
 
    ```
    jupyter notebook teen.ipynb
    ```
 
-3. Execute all cells to reproduce the analysis.
+3. Execute all cells or run the script to reproduce the analysis.
 
 ## Project Structure
 
-```
+```id="g5dfjg"
 Teen_Mental_Health_Datanalysis/
 │
 ├── Teen_Mental_Health_Dataset.csv
@@ -78,7 +93,7 @@ Teen_Mental_Health_Datanalysis/
 
 ## Conclusion
 
-This project provides an exploratory view of how social media usage and behavioral factors are associated with teen mental health. The findings are descriptive and can be extended with more advanced statistical or machine learning approaches.
+This project provides a basic exploratory analysis of teen mental health data. The results highlight patterns between social media usage and mental health indicators. The analysis can be extended further using statistical modeling or machine learning techniques.
 
 ## Author
 
